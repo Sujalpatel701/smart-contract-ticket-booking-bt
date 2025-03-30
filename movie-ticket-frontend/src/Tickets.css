@@ -1,0 +1,73 @@
+.container {
+  max-width: 900px; /* Reduced width */
+  margin: auto;
+  margin-top: 20px; /* ⬆️ Moves up */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px; /* Reduced padding */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 10px; /* ⬆️ Moves up */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 20px; /* Reduced font size */
+}
+
+/* Table Header */
+th {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+  padding: 14px; /* Reduced padding */
+  text-align: center;
+  font-size: 18px; /* Reduced font size */
+}
+
+/* Table Data */
+td {
+  padding: 14px; /* Reduced padding */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 18px; /* Reduced font size */
+}
+
+/* Transaction ID Highlight */
+td a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; /* Reduced font size */
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
